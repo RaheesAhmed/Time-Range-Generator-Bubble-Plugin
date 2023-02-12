@@ -1,0 +1,29 @@
+<html>
+  <head> 
+    <title>Time Range Generator</title>
+  </head>
+  <body>
+    
+<div class="custom-container">
+
+  <div >
+  <label for="date">Date:</label>
+  <input type="date" id="date" placeholder="Select Date">
+</div>
+<div>
+  <label for="interval">Interval (minutes):</label>
+  <input type="number" id="interval" placeholder="30">
+</div>
+<button onclick="setTimeRanges(instance, document.getElementById('date').value, document.getElementById('interval').value)">Generate </button>
+  </div>
+
+
+<div class="table-container">
+  <table>
+    <th>Time</th>
+    <td  id="show"></td>
+  </table>
+</div>
+  <script src="app.js"></script>
+  </body>
+</html>
